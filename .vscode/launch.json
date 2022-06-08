@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "customize:server.conversation_url (python3.9)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/",
+                "lambdaHandler": "server.conversation_url"
+            },
+            "lambda": {
+                "runtime": "python3.9",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        }
+    ]
+}
